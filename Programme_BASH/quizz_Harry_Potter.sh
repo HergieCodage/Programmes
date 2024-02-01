@@ -4,7 +4,7 @@ continue="y"
 while [ $continue == "y" ]
 do
 		clear
-. /c/Users/Hergie/Desktop/COURS/Cours_BASH/mes_script/color.sh	
+. /d/Bureau/Programmation/Programmes/Programme_BASH/color.sh	
 		total=0
 		bonnereponse3="Tom Elvis Jedusor"
 
