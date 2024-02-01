@@ -1,5 +1,5 @@
-NOM : ARYA
-Sexe : Femme
+NOM : dakon
+Sexe : Homme
 Race : Elfe
 Classe: Archer
 Compétences:
@@ -7,12 +7,12 @@ Compétences:
 - Discrétion +2
 
 VOS STATS
-Force        = 28 (FOR)
+Force        = 32 (FOR)
 Agilité      = 84 (AGI)
 Intelligence = 40 (INT)
-Apparence    = 83 (APP)
+Apparence    = 79 (APP)
 Endurance    = 60 (END)
 Mentalité    = 40 (MEN)
 
-Bourse = 91
+Bourse = 60
 
