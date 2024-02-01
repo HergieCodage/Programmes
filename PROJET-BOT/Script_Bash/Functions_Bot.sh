@@ -242,7 +242,7 @@ function PersoCreate(){
 	Bourse=100
 	
 	clear
-	chemin=/home/hergie/Bureau/PROJET-BOT/Script_Bash/save/Personnages
+	chemin=/d/Bureau/Programmation/Programmes/PROJET-BOT/Script_Bash/save/Personnages
 	touch $chemin/$reponse1.txt
 	echo "NOM : $reponse1" >> $chemin/$reponse1.txt
 	echo "Sexe :" ${Sexe[$choix1]} >> $chemin/$reponse1.txt
@@ -304,7 +304,7 @@ function EditBourse(){
 
 function ListePerso(){
 	clear
-	chemin=/home/hergie/Bureau/PROJET-BOT/Script_Bash/save/Personnages
+	chemin=/d/Bureau/Programmation/Programmes/PROJET-BOT/Script_Bash/save/Personnages
 	liste_perso=`ls $chemin`
 	declare -a tab_perso
 	i=0

@@ -1,0 +1,18 @@
+NOM : Arya
+Sexe : Femme
+Race : Elfe
+Classe: Archer
+Compétences:
+- Faune & Flore +2 / Vue Perçante et Ouïe fine +2
+- Discrétion +2
+
+VOS STATS
+Force        = 28 (FOR)
+Agilité      = 84 (AGI)
+Intelligence = 40 (INT)
+Apparence    = 83 (APP)
+Endurance    = 60 (END)
+Mentalité    = 40 (MEN)
+
+Bourse = 100
+

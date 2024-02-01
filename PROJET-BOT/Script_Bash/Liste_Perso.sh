@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-chemin=/home/hergie/Bureau/PROJET-BOT/Script_Bash/save/Personnages
+chemin=/d/Bureau/Programmation/Programmes/PROJET-BOT/Script_Bash/save/Personnages
 liste_perso=`ls $chemin`
 declare -a tab_perso
 i=0

@@ -230,7 +230,7 @@ then
 	CC=$Voleur
 fi
 clear
-chemin=/c/Users/Hergie/Desktop/PROJET-BOT/Script_Bash/save/Personnages
+chemin=/d/Bureau/Programmation/Programmes/PROJET-BOT/Script_Bash/save/Personnages
 touch $chemin/$reponse1.txt
 echo "NOM : $reponse1" >> $chemin/$reponse1.txt
 echo "Sexe :" ${Sexe[$choix1]} >> $chemin/$reponse1.txt
