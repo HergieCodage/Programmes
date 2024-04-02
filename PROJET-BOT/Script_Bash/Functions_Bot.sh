@@ -239,10 +239,7 @@ function PersoCreate(){
 	fi
 	
 	#Bourse
-	Bourse=$Bourse1
-	Bourse1=$RANDOM
-    let "Bourse1=Bourse1%100"
-    let "Bourse1=Bourse1+1"
+	Bourse=100
 	
 	clear
 	chemin=/d/Bureau/Programmation/Programmes/PROJET-BOT/Script_Bash/save/Personnages
@@ -309,49 +306,38 @@ function ListePerso(){
 	clear
 	chemin=/d/Bureau/Programmation/Programmes/PROJET-BOT/Script_Bash/save/Personnages
 	liste_perso=`ls $chemin`
-	declare -a tab_perso
-	i=0
-	p=2
-	reponse="o"
-	for perso in $liste_perso
-	do
-		if [ $p -eq 2 ]
-		then
-			tab_perso[$i]="$perso"
-			echo "$i - $perso"
-			echo
-			let "i=i+1"
-			let "p=p+1"
-		else
-			tab_perso[$i]="$perso"
-			echo "$i - $perso"
-			echo
-			let "i=i+1"
-			let "p=p-1"
-		fi
-	done
-	echo
-	echo "Veuillez selectionner le personnage"
-	read choix
-	echo
-	cat $chemin/${tab_perso[$choix]}
 	while [ $reponse = "o" ]
 	do
+		declare -a tab_perso
+		i=0
+		p=2
+		reponse="o"
+		for perso in $liste_perso
+		do
+			if [ $p -eq 2 ]
+			then
+				tab_perso[$i]="$perso"
+				echo "$i - $perso"
+				echo
+				let "i=i+1"
+				let "p=p+1"
+			else
+				tab_perso[$i]="$perso"
+				echo "$i - $perso"
+				echo
+				let "i=i+1"
+				let "p=p-1"
+			fi
+		done
+		echo
+		echo "Veuillez selectionner le personnage"
+		read choix
+		echo
+		cat $chemin/${tab_perso[$choix]}
 		echo
 		echo "Voulez vous afficher un autre personnage ?"
 		echo "[o] oui, [n] non"
 			read reponse
-			if [ $reponse = "o" ]
-			then 
-				
-				echo "Veuillez selectionner le personnage"
-				read choix
-				echo
-				cat $chemin/${tab_perso[$choix]}
-				echo
-			else
-				echo	
-			fi
 	done
 	WaitEnter
 }
