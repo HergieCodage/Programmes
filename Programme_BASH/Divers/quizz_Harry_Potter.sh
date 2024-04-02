@@ -4,7 +4,7 @@ continue="y"
 while [ $continue == "y" ]
 do
 		clear
-. /d/Bureau/Programmation/Programmes/Programme_BASH/Divers/color.sh	
+. color.sh	
 		total=0
 		bonnereponse3="Tom Elvis Jedusor"
 
@@ -14,7 +14,7 @@ echo -e "#                           ${Underline}QUIZZ HARRY POTTER${Normal}${Ti
 echo -e "#                                                                                #"
 echo -e "##################################################################################${Normal}"
 echo 
-
+		# QUESTION 1
 		echo -e "${Orange}question 1${Normal}"	
 		echo -e "${Cyan}Combien y a t-il de livre dans la Saga Harry Potter ?"
 		echo -e "P.S. : sans prendre en compte les Animaux Fantastique et L'enfant Maudit${Normal}"
@@ -27,6 +27,7 @@ echo
 			echo -e "${Vert}Bonne Réponse${Normal}"
 		fi
 		echo 
+		# QUESTION 2
 		echo -e "${Orange}Question 2${Normal}"
 		echo -e "${Cyan}Dans Harry Potter, comment s'appel le rat de Ron ?"
 		echo -e "[1] Pattenron, [2] Croûtard, [3] Hedwige, [4] Croque-Dur${Normal}"
@@ -39,6 +40,7 @@ echo
 			echo -e "${Vert}Bonne réponse${Normal}"
 		fi
 		echo 
+		# QUESTION 3
 		echo -e "${Orange}Question 3${Normal}"
 		echo -e "${Cyan}Quel est le vrai nom de Voldemort ? (nom complet français)${Normal}"
 			read reponse3
@@ -50,6 +52,7 @@ echo
 			echo -e "${Rouge}Faux${Normal}"
 		fi
 		echo 
+		# QUESTION 4
 		echo -e "${Orange}Question 4${Normal}"
 		echo -e "${Cyan}Dans quel maison se trouve Luna Lovegood ?"
 		echo -e "[1] Griffondor, [2] Serpentard, [3] Serdaigle, [4] Poufsouffle${Normal}"
@@ -62,6 +65,7 @@ echo
 			echo -e "${Vert}Bonne réponse${Normal}"
 		fi
 		echo 
+		# QUESTION 5
 		echo -e "${Orange}Question 5${Normal}"
 		echo -e "${Cyan}Quel maison devait gagner la coupe des 4 maisons, lors de la 1ère année de Harry à Poudlard ?"
 		echo -e "[1] Griffondor, [2] Serpentard, [3] Serdaigle, [4] Poufsouffle${Normal}"
@@ -74,6 +78,7 @@ echo
 			echo -e "${Vert}Bonne réponse${Normal}"
 		fi
 		echo 
+		# QUESTION 6
 		echo -e "${Orange}Question 6${Normal}"
 		echo -e "${Cyan}Quel est la différence entre un animagus et un Loup-Garou ?"
 		echo -e "[1] aucune, [2] un animagus n'a pas le choix que de se transformer, [3] un animagus a le choix de se transformer${Normal}"
@@ -86,6 +91,7 @@ echo
 			echo -e "${Vert}Bonne réponse${Normal}"
 		fi
 		echo 
+		# QUESTION 7
 		echo -e "${Orange}Question 7${Normal}"
 		echo -e "${Cyan}A quel âge peut-on passer son permis pour Transplaner ?${Normal}"
 			read reponse7
@@ -97,6 +103,7 @@ echo
 			echo -e "${Vert}Bonne réponse${Normal}"
 		fi
 		echo 
+		# QUESTION 8
 		echo -e "${Orange}Question 8${Normal}"
 		echo -e "${Cyan}Combien y a-t-il d'épreuve pour atteindre la pierre philosophale (dans le livre)${Normal}"
 			read reponse8
@@ -108,6 +115,7 @@ echo
 			echo -e "${Vert}Bonne réponse${Normal}"
 		fi
 		echo 
+		# QUESTION 9
 		echo -e "${Orange}Question 9${Normal}"
 		echo -e "${Cyan}Dans quel maison été le professeur Quirrell quand il étudiait à Poudlard ?"
 		echo -e "[1] Griffondor, [2] Serpentard, [3] Poufsoufle, [4] Serdaigle${Normal}"
@@ -120,6 +128,7 @@ echo
 			echo -e "${Vert}Bonne réponse${Normal}"
 		fi
 		echo 
+		# QUESTION 10
 		echo -e "${Orange}Question 10${Normal}"
 		echo -e "${Cyan}Où est Né Harry ?"
 		echo -e "[1] Godric's Hollow, [2] Little Hangleton, [3] Pré-au-Lard, [4] Little Whinging${Normal}"
@@ -132,6 +141,7 @@ echo
 			echo -e "${Vert}Bonne réponse${Normal}"
 		fi
 		echo 	
+		# SCORES / RESULTATS
 		echo -e "${Rose}Votre score est de" $total "sur 10${Normal}"
 		echo " "
 		let "totalmoins2=total-2"
